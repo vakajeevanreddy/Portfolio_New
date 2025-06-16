@@ -1,0 +1,272 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+}
+/* About Section */
+#about {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+/* Hover Effect */
+#about:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
+}
+
+/* Heading Styling */
+#about h1 {
+    font-size: 32px;
+    color: #efeff4;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+#about p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Bold Styling */
+#about p strong {
+    color: #26c630;
+}
+
+/* Glowing Animation */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ffcc00; }
+    50% { box-shadow: 0 0 20px #ffcc00; }
+    100% { box-shadow: 0 0 5px #ffcc00; }
+}
+
+#about:hover {
+    animation: glowing 1.5s infinite alternate;
+}
+
+/* Skills Section */
+#skills {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Card */
+.skill-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s;
+    text-align: left;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Skill Title */
+.skill-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    color: #3fbd1f;
+    margin-bottom: 10px;
+}
+
+/* Skill Icon */
+.skill-card h3 i {
+    font-size: 24px;
+    color: #ac06c2;
+}
+
+/* Skill List */
+.skill-list {
+    list-style: none;
+    padding: 10px;
+    margin: 25px;
+}
+
+.skill-list li {
+    margin: 5px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #15a00c; }
+    50% { box-shadow: 0 0 20px #0916a3; }
+    100% { box-shadow: 0 0 5px #cc0dc6; }
+}
+
+.skill-card:hover {
+    animation: glowing 1.5s infinite alternate;
+}
+
+
+/* Sections */
+section {
+    padding: 100px 20px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Experience Cards */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.experience-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+/* Contact Section */
+#contact {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+#contact:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Contact Items */
+.contact-list li {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contact Icons */
+.contact-list li i {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+/* Contact Links */
+.contact-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-list li a:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Glow Animation */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ffcc00; }
+    50% { box-shadow: 0 0 20px #ffcc00; }
+    100% { box-shadow: 0 0 5px #ffcc00; }
+}
+
+#contact:hover {
+    animation: glowing 1.5s infinite alternate;
+}
+
